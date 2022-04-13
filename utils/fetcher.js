@@ -1,6 +1,25 @@
 import axios from 'axios'
 import {createApi} from 'unsplash-js'
 
+export const locationFetcher = async () => {
+  if (!navigator.geolocation) {
+      alert('Your location could not be extracted')
+  }else {
+      navigator.geolocation.getCurrentPosition((position) => {
+
+          const {latitude, longitude} = position.coords
+
+          setLocation({latitude: latitude.toString(), longitude: longitude.toString()})
+
+          dispatch({type: 'LATLONG', payload: latitude.toString()+','+longitude.toString()})
+
+      }, () => {
+          alert('browser unsupported geolocation')
+      })
+          
+  }
+}
+
 export const photourls = async ( query, perPage) => {
     const unsplash = createApi ({
       accessKey: "mwl543ghjT95oBNVZVd0CIPzYebB3kcMO82SKVroS7M"

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: Changa;
@@ -10,8 +11,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #888160d7;
-    height: 100%;
+    color: #0a3242d7;
 }
 h1{
     font-size: 3.5rem;
