@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="md:flex px-[8rem] py-[5rem] h-[100vh]">
+    <div className="md:flex px-[8rem] py-[5rem] h-[100vh] w-[100%]">
       <div>
         <h1 className='flex flex-col'>
             <span style={{fontWeight:'800', color: 'brown'}}>Coffee </span>
