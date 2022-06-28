@@ -1,9 +1,9 @@
-const Testimonial = () => {
+const Contact = () => {
   return (
     <div className='h-[100vh] w-[100%] px-[8rem] bg-gradient-to-r from-purple-500 to-pink-500'>
-        Testimonial
+        Contact
     </div>
   )
 }
 
-export default Testimonial
+export default Contact

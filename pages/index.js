@@ -1,22 +1,23 @@
 import Layout from '../components/Layout'
-import Banner from '../components/Banner'
-import Testimonial from '../components/Testimonial'
+import Banner from '../components/Home/Banner'
+import Contact from '../components/Contact'
 
 const Home = ({data}) => {
     console.log(data)
     
     return(
         <>
-        <Layout description="Home page practice" title="we are the champions of the world">
-            
-            <main className="flex flex-col">
+            <Layout description="Home page practice" title="we are the champions of the world">
                 
-                <Banner />
-                <Testimonial />
+                <main className="flex flex-col pt-[10rem]">
+                    
+                    <Banner />
+                    
+                    <Contact />
 
-            </main>
-            
-        </Layout>
+                </main>
+                
+            </Layout>
         </>
     )
 }
