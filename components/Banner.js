@@ -1,6 +1,8 @@
+import Image from "next/image"
+import shop from "../public/shop.png"
 const Banner = () => {
   return (
-    <div className="md:flex px-[8rem] py-[5rem] h-[100vh] w-[100%]">
+    <div className="md:flex px-[10rem] py-[5rem] h-[100vh] w-[100%]">
       <div>
         <h1 className='flex flex-col'>
             <span style={{fontWeight:'800', color: 'brown'}}>Coffee </span>
@@ -12,7 +14,7 @@ const Banner = () => {
       </div>
       <div className="flex-grow"></div>
       <div>
-        <h1>Hero Image</h1>
+        <Image src={shop} width={400} height={400} />
       </div>
     </div>
   )
