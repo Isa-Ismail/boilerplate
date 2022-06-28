@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import Banner from '../components/Home/Banner'
-import Contact from '../components/Contact'
+import Contact from '../components/Contact/Contact'
 
 const Home = ({data}) => {
     console.log(data)
