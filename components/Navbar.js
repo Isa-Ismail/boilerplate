@@ -5,24 +5,30 @@ const Navbar = () => {
   return (
             <AppBar position="fixed">
 
-                <div className="md:flex md:space-x-10 px-16 py-3 bg-white">
+                <div className="md:flex px-16 py-3 bg-white">
 
-                    <div>
-                        <h2>logo</h2>
+                    <div className="hover:cursor-pointer">
+                        <p className="px-5 py-2">logo</p>
                     </div>
 
                     <div className='flex-grow'></div>
 
-                    <div className="flex space-x-10">
+                    <div className="md:flex space-x-5">
 
                         <div>
-                            <h2>link</h2>
+                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">Volunteer</p>
                         </div>
                         <div>
-                            <h2>link</h2>
+                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">Get Aid</p>
                         </div>
                         <div>
-                            <h2>link</h2>
+                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">News and Stories</p>
+                        </div>
+                        <div>
+                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">Donate</p>
+                        </div>
+                        <div>
+                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">About us</p>
                         </div>
 
                     </div>
@@ -30,7 +36,7 @@ const Navbar = () => {
                     <div className='flex-grow'></div>
 
                     <div>
-                        <h2>link</h2>
+                        <p className="px-5 py-2 hover:underline hover:cursor-pointer">logo</p>
                     </div>
 
                 </div>
