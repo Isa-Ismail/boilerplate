@@ -7,16 +7,9 @@ const Home = ({data}) => {
     
     return(
         <>
-            <Layout description="Home page practice" title="we are the champions of the world">
-                
-                <main className="flex flex-col pt-[10rem]">
-                    
-                    <Banner />
-                    
-                    <Contact />
-
-                </main>
-                
+            <Layout description="Home page practice" title="we are the champions of the world">             
+                <Banner />   
+                <Contact />      
             </Layout>
         </>
     )
