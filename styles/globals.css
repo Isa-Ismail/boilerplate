@@ -9,11 +9,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
-    background: url(/mesh.png);
-    background-position: 50%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #0a3242d7;
 }
 h1{
@@ -33,3 +28,7 @@ p{
     font-size: 1.2rem;
     color: rgb(78, 12, 58)
 }
+
+* {
+    box-sizing: border-box;
+  }

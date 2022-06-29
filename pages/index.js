@@ -9,7 +9,7 @@ const Home = ({data}) => {
         <>
             <Layout description="Home page practice" title="we are the champions of the world">             
                 <Banner />   
-                <Contact />      
+                <Contact />
             </Layout>
         </>
     )
