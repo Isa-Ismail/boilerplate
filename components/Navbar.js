@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
             <AppBar position="fixed">
 
-                <div className="md:flex px-16 py-5 bg-white items-center">
+                <div className="flex px-16 py-5 bg-white items-center">
 
                     <div className="hover:cursor-pointer">
                         <p className="px-5 py-2">Divoaid</p>
@@ -13,7 +13,7 @@ const Navbar = () => {
 
                     <div className='flex-grow'></div>
 
-                    <div className="md:flex space-x-5">
+                    <div className="md:flex space-x-5 sm:hidden">
 
                         <div>
                             <p className="hover:underline hover:cursor-pointer">Volunteer</p>
