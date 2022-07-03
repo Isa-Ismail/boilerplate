@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
             <AppBar position="fixed">
 
-                <div className="md:flex px-16 py-3 bg-white">
+                <div className="md:flex px-16 py-5 bg-white items-center">
 
                     <div className="hover:cursor-pointer">
-                        <p className="px-5 py-2">logo</p>
+                        <p className="px-5 py-2">Divoaid</p>
                     </div>
 
                     <div className='flex-grow'></div>
@@ -16,19 +16,19 @@ const Navbar = () => {
                     <div className="md:flex space-x-5">
 
                         <div>
-                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">Volunteer</p>
+                            <p className="hover:underline hover:cursor-pointer">Volunteer</p>
                         </div>
                         <div>
-                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">Get Aid</p>
+                            <p className="hover:underline hover:cursor-pointer">Get Aid</p>
                         </div>
                         <div>
-                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">News and Stories</p>
+                            <p className="hover:underline hover:cursor-pointer">News and Stories</p>
                         </div>
                         <div>
-                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">Donate</p>
+                            <p className="hover:underline hover:cursor-pointer">Donate</p>
                         </div>
                         <div>
-                            <p className="px-5 py-2 hover:underline hover:cursor-pointer">About us</p>
+                            <p className="hover:underline hover:cursor-pointer">About us</p>
                         </div>
 
                     </div>
@@ -36,7 +36,8 @@ const Navbar = () => {
                     <div className='flex-grow'></div>
 
                     <div>
-                        <p className="px-5 py-2 hover:underline hover:cursor-pointer">logo</p>
+                        <p className="hover:underline hover:cursor-pointer">Hotline</p>
+                        <p className="hover:underline hover:cursor-pointer">01781221242</p>
                     </div>
 
                 </div>

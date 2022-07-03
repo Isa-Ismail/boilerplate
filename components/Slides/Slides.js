@@ -1,28 +1,35 @@
-import { useState } from 'react'
-import Carousel from 'react-elastic-carousel'
+import React, { Component } from "react"
+import { Grid } from "@mui/material"
+import Slider from "react-slick"
+import Image from "next/image"
 
-const App = () => {
+const Slides = () =>{
 
-	const [items, setItems] = useState(
-			[
-				{id: 1, title: 'item #1'},
-				{id: 2, title: 'item #2'},
-				{id: 3, title: 'item #3'},
-				{id: 4, title: 'item #4'},
-				{id: 5, title: 'item #5'}
-		  	]
-		)
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
 
-	return (
-		<div className="flex justify-center space-x-10">
-			<Carousel className="!w-[30rem]">
-        		{items.map(item => <div key={item.id}>{item.title}</div>)}
-      		</Carousel>
-			<Carousel className="!w-[30rem]">
-        		{items.map(item => <div key={item.id}>{item.title}</div>)}
-      		</Carousel>
-		</div>
-    )
-}
+    return (
+      <div className="flex justify-center">
+				<Slider className="w-[50%]" {...settings}>
+					
+					<div className="text-center">
+						<Image src="/shop.png" height={250} width={250}/>
+					</div>
+					<div className="text-center">
+						<Image src="/shop.png" height={250} width={250}/>
+					</div>
+					<div className="text-center">
+						<Image src="/shop.png" height={250} width={250}/>
+					</div>
+				
+				</Slider>	
+      </div>
+    );
+  }
 
-export default App
+  export default Slides
