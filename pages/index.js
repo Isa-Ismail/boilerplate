@@ -10,7 +10,7 @@ const Home = ({data}) => {
     
     return(
         <>
-            <Layout description="Home page practice" title="we are the champions of the world">             
+            <Layout description="Disaster Resistance Platform" title="DivoAid">             
                 <Banner />   
                 <Contact />
                 <Slide />
