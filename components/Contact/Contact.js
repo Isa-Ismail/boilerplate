@@ -2,7 +2,7 @@ import { Grid } from "@mui/material"
 import Image from "next/image"
 const Contact = () => {
   return (
-    <div className="bg-white px-10 py-10 md:flex item">
+    <div className="bg-white px-10 py-20 md:flex item">
 
       <Grid container spacing={4} className="items-center">
 
