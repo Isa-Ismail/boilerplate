@@ -1,8 +1,7 @@
 import Layout from '../components/Layout'
-import Banner from '../components/Home/Banner'
-import Contact from '../components/Contact/Contact'
+import Banner from '../components/Hero/Banner'
+import Second from '../components/Second/Second'
 import Respond from '../components/Respond/Respond'
-import Care from '../components/Care/Care'
 import Slide from '../components/Slides/Slides'
 
 const Home = ({data}) => {
@@ -12,10 +11,9 @@ const Home = ({data}) => {
         <>
             <Layout description="Disaster Resistance Platform" title="DivoAid">             
                 <Banner />   
-                <Contact />
+                <Second />
                 <Slide />
                 <Respond />
-                <Care />
             </Layout>
         </>
     )

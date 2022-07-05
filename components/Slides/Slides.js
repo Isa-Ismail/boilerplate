@@ -11,37 +11,38 @@ const Slides = () =>{
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1
     }
 
     return (
-      <div className="flex justify-center py-10">
+      <div className="flex justify-center py-10 bg-white">
+    
 				<Slider className="w-[50%]" {...settings}>
 					
 					<div className="text-center px-10">
-						<Image className="rounded-md" src="/floodLanding.jpg" height={250} width={450}/>
-            <h2>Earthquake</h2>
+						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+            <p>Earthquake</p>
 					</div>
 					<div className="text-center px-10">
-						<Image className="rounded-md" src="/floodLanding.jpg" height={250} width={450}/>
-            <h2>Flood</h2>
+						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+            <p>Flood</p>
 					</div>
 					<div className="text-center px-10">
-						<Image className="rounded-md" src="/floodLanding.jpg" height={250} width={450}/>
-            <h2>Storm</h2>
+						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+            <p>Storm</p>
 					</div>
           <div className="text-center px-10">
-						<Image className="rounded-md" src="/floodLanding.jpg" height={250} width={450}/>
-            <h2>Storm</h2>
+						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+            <p>Storm</p>
 					</div>
           <div className="text-center px-10">
-						<Image className="rounded-md" src="/floodLanding.jpg" height={250} width={450}/>
-            <h2>Storm</h2>
+						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+            <p>Storm</p>
 					</div>
           <div className="text-center px-10">
-						<Image className="rounded-md" src="/floodLanding.jpg" height={250} width={450}/>
-            <h2>Storm</h2>
+						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+            <p>Storm</p>
 					</div>
 				
 				</Slider>	

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Respond = () => {
   return (
-    <div className="px-10 py-10">
+    <div className="px-[10rem] py-10">
         <h1 className="text-green-700">Projects responding to South Asia Floods</h1>
         <Divider />
         <div className="flex py-10 space-x-20 space-y-5">

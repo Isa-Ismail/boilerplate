@@ -7,22 +7,22 @@ import MenuItem from '@mui/material/MenuItem'
 
 const Navbar = () => {
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
+    const [anchorEl, setAnchorEl] = React.useState(null)
+    const open = Boolean(anchorEl)
     const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
+      setAnchorEl(event.currentTarget)
     };
     const handleClose = () => {
-      setAnchorEl(null);
+      setAnchorEl(null)
     }
 
     return (
-            <AppBar position="fixed">
+            <AppBar position="fixed bg-white">
 
-                <div className="flex px-16 py-5 bg-white items-center">
+                <div className="flex px-[10rem] py-5 items-center">
 
                     <div className="hover:cursor-pointer">
-                        <p className="px-5 py-2">Divoaid</p>
+                        <p className="px-5 py-2 bg-green-700 text-white rounded-md">Divoaid</p>
                     </div>
 
                     <div className='flex-grow'></div>
@@ -56,31 +56,31 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="md:hidden">
-                    <div>
-                        <Button
-                            id="basic-button"
-                            aria-controls={open ? 'basic-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleClick}
-                        >
-                            <MenuIcon className="text-black" />
-                        </Button>
-                        <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                            'aria-labelledby': 'basic-button',
-                            }}
-                        >
-                            <MenuItem onClick={handleClose}>Volunteer</MenuItem>
-                            <MenuItem onClick={handleClose}>Get Aid</MenuItem>
-                            <MenuItem onClick={handleClose}>News and Stories</MenuItem>
-                            <MenuItem onClick={handleClose}>Donate</MenuItem>
-                            <MenuItem onClick={handleClose}>About Us</MenuItem>
-                        </Menu>
+                        <div>
+                            <Button
+                                id="basic-button"
+                                aria-controls={open ? 'basic-menu' : undefined}
+                                aria-haspopup="true"
+                                aria-expanded={open ? 'true' : undefined}
+                                onClick={handleClick}
+                            >
+                                <MenuIcon className="text-black" />
+                            </Button>
+                            <Menu
+                                id="basic-menu"
+                                anchorEl={anchorEl}
+                                open={open}
+                                onClose={handleClose}
+                                MenuListProps={{
+                                'aria-labelledby': 'basic-button',
+                                }}
+                            >
+                                <MenuItem onClick={handleClose}>Volunteer</MenuItem>
+                                <MenuItem onClick={handleClose}>Get Aid</MenuItem>
+                                <MenuItem onClick={handleClose}>News and Stories</MenuItem>
+                                <MenuItem onClick={handleClose}>Donate</MenuItem>
+                                <MenuItem onClick={handleClose}>About Us</MenuItem>
+                            </Menu>
                         </div>
                     </div>
 
