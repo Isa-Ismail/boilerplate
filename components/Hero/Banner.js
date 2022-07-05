@@ -1,9 +1,9 @@
 const Banner = () => {
 
   return (
-    <div className="flex-col h-[100vh] w-[100%] py-[14rem] h-screen">
+    <div className="flex-col w-[100%] py-[18rem] h-screen">
 
-        <div className="pb-10">
+        <div className="pb-6">
           <h1 className="text-[#343A40] text-center">DISASTER RELIEF</h1>
         </div>
 
