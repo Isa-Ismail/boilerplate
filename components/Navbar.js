@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
             <AppBar position="fixed">
 
-                <div className="flex px-[10rem] py-5 items-center bg-white">
+                <div className="flex md:px-[10rem] sm:px-4 py-5 items-center bg-white space-x-6">
 
                     <div className="hover:cursor-pointer">
                         <p className="px-5 py-2 bg-green-700 text-white rounded-md">Divoaid</p>
@@ -64,7 +64,7 @@ const Navbar = () => {
                                 aria-expanded={open ? 'true' : undefined}
                                 onClick={handleClick}
                             >
-                                <MenuIcon className="text-black" />
+                                <MenuIcon className="text-green-700" />
                             </Button>
                             <Menu
                                 id="basic-menu"
