@@ -1,7 +1,7 @@
 const Banner = () => {
 
   return (
-    <div className="flex-col h-[100vh] w-[100%] py-[10rem] h-[80%]">
+    <div className="flex-col h-[100vh] w-[100%] py-[14rem] h-screen">
 
         <div className="pb-10">
           <h1 className="text-[#343A40] text-center">DISASTER RELIEF</h1>
