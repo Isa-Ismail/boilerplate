@@ -6,7 +6,7 @@ const Contact = () => {
 
       <h1>Things to do during a disaster</h1>
 
-      <Grid container spacing={4} className="items-center">
+      <Grid container spacing={4} className="px-[10rem]">
         <Grid item md={3}>
           <Image className="rounded-md" src="/floodLanding.jpg" width={450} height={450} />
         </Grid>
