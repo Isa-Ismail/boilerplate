@@ -3,6 +3,7 @@ import Banner from '../components/Hero/Banner'
 import Second from '../components/Second/Second'
 import Respond from '../components/Respond/Respond'
 import Slide from '../components/Slides/Slides'
+import Donate from '../components/Donate/Donate'
 
 const Home = ({data}) => {
     console.log(data)
@@ -13,7 +14,7 @@ const Home = ({data}) => {
                 <Banner />   
                 <Second />
                 <Slide />
-                <Respond />
+                <Donate />
             </Layout>
         </>
     )
