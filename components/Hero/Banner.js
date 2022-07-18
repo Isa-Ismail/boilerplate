@@ -1,4 +1,12 @@
+import { useState } from "react"
+
 const Banner = () => {
+
+  const [food, setFood] = useState([])
+
+  const clickHandler = () => {
+    fetch('https://reqres.in/api/users?page=2').then(res => res.json()).then((data)=> {console.log(data);setFood(data.data[0])})
+  }
 
   return (
     <div className="flex-col w-[100%] py-[18rem] h-screen">
@@ -14,7 +22,8 @@ const Banner = () => {
         </div>
 
         <div className="flex justify-center px-6 py-20 space-x-10">
-          <button className="px-5 py-2 bg-green-700 rounded-md hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."><p className="text-white sm:text-[.9rem]">Get Aid</p></button>
+          {food&&<h1>{food.email}</h1>}
+          <button onClick={clickHandler} className="px-5 py-2 bg-green-700 rounded-md hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."><p className="text-white sm:text-[.9rem]">Get Aid</p></button>
           <button className="px-5 py-2 bg-green-700 rounded-md hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."><p className="text-white sm:text-[.9rem]">Donate</p></button>
           <button className="px-5 py-2 bg-green-700 rounded-md hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."><p className="text-white sm:text-[.9rem]">Get Involved</p></button>
         </div>
