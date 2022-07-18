@@ -5,18 +5,23 @@ export const Store = createContext()
 
 const initialState = {
     latlong: '',
-    stores: []
+    stores: [],
+    sample: []
 }
 
 const reducer = (state, action) => {
     switch(action.type){
         case 'UPDATE':
             return {
-                ...state, stores:action.payload
+                ...state, stores: action.payload
             }
         case 'LATLONG':
             return {
-                ...state, latlong:action.payload
+                ...state, latlong: action.payload
+            }
+        case 'SAMPLE':
+            return {
+                ...state, sample: action.payload
             }
         default:
             return state
