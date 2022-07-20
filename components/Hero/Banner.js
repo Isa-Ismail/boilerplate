@@ -2,15 +2,15 @@ import { useState } from "react"
 import { useContext } from "react"
 import { Store } from "../../utils/store"
 import { sampleReq } from "../../utils/fetcher"
+import { data } from "autoprefixer"
 
-const Banner = () => {
-
+const Banner = ({pass}) => {
+  console.log(pass)
   const {state, dispatch} = useContext(Store)
 
   const clickHandler = async () => {
     //fetch('https://reqres.in/api/users?page=2').then(res => res.json()).then((data)=> {console.log(data);setFood(data.data[0])})
-    const res = await sampleReq()
-    dispatch({type:'SAMPLE', payload: res})
+    dispatch({type:'SAMPLE', payload: pass})
     console.log(state)
   }
 

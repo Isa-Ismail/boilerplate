@@ -1,17 +1,17 @@
 import Layout from '../components/Layout'
 import Banner from '../components/Hero/Banner'
 import Second from '../components/Second/Second'
-import Respond from '../components/Respond/Respond'
 import Slide from '../components/Slides/Slides'
 import Donate from '../components/Donate/Donate'
+import { sampleReq } from '../utils/fetcher'
 
 const Home = ({data}) => {
-    console.log(data)
+    console.log({data})
     
     return(
         <>
             <Layout description="Disaster Resistance Platform" title="DivoAid">             
-                <Banner />   
+                <Banner pass = {data}/>   
                 <Second />
                 <Slide />
                 <Donate />
@@ -24,7 +24,7 @@ export const getStaticProps = async () => {
     
     return {
         props: {
-            data: 'sdad'
+            data: await sampleReq(),
         }
     }
 }
