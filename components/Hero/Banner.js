@@ -1,10 +1,8 @@
-import { useState } from "react"
 import { useContext } from "react"
 import { Store } from "../../utils/store"
-import { sampleReq } from "../../utils/fetcher"
-import { data } from "autoprefixer"
 
 const Banner = ({pass}) => {
+  //const api = fetch('http://localhost:8000/api/blogs').then(res=>res.json()).then(data=> console.log(data))
   console.log(pass)
   const {state, dispatch} = useContext(Store)
 
@@ -18,12 +16,12 @@ const Banner = ({pass}) => {
     <div className="flex-col w-[100%] py-[18rem] h-screen">
 
         <div className="pb-6">
-          <h1 className="text-[#343A40] text-center text-[3rem]">DISASTER RELIEF</h1>
+          <h1 className="text-[#343A40] text-center text-[3rem]">Department of ICT, BUP</h1>
         </div>
 
         <div>
           <p className="text-center">
-            Find the latest news, in-depth stories, Q&A and FAQs about natural disaster and humanitarian emergencies around the world
+            Find the latest news, in-depth stories, Q&A and FAQs about our department here.
           </p>
         </div>
 

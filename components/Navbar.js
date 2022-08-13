@@ -4,6 +4,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Button from '@mui/material/Button'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
+import Image from 'next/image'
+import Logo from '../public/logos and images/bup.png'
 
 const Navbar = () => {
 
@@ -19,30 +21,30 @@ const Navbar = () => {
     return (
             <AppBar position="fixed">
 
-                <div className="flex md:px-[10rem] sm:px-4 py-5 items-center bg-white space-x-6">
+                <div className="flex md:px-[10rem] sm:px-4 py-5 items-center bg-blue-700">
 
                     <div className="hover:cursor-pointer">
-                        <p className="px-5 py-2 bg-green-700 text-white rounded-md">Divoaid</p>
+                        <Image src={Logo} height={50} width={50} />
                     </div>
 
                     <div className='flex-grow'></div>
 
-                    <div className="md:flex space-x-5 sm:hidden">
+                    <div className="md:flex space-x-10 sm:hidden">
 
                         <div>
-                            <p className="hover:underline hover:cursor-pointer">Volunteer</p>
+                            <p className="hover:underline hover:cursor-pointer text-white">Home</p>
                         </div>
                         <div>
-                            <p className="hover:underline hover:cursor-pointer">Get Aid</p>
+                            <p className="hover:underline hover:cursor-pointer text-white">Papers</p>
                         </div>
                         <div>
-                            <p className="hover:underline hover:cursor-pointer">News and Stories</p>
+                            <p className="hover:underline hover:cursor-pointer text-white">News</p>
                         </div>
                         <div>
-                            <p className="hover:underline hover:cursor-pointer">Donate</p>
+                            <p className="hover:underline hover:cursor-pointer text-white">Notice</p>
                         </div>
                         <div>
-                            <p className="hover:underline hover:cursor-pointer">About us</p>
+                            <p className="hover:underline hover:cursor-pointer text-white">About</p>
                         </div>
 
                     </div>
@@ -50,9 +52,9 @@ const Navbar = () => {
                     <div className='flex-grow'></div>
 
                     <div className="md:flex sm:hidden">
-                        <div className="flex-col">
-                            <p className="hover:underline hover:cursor-pointer">Hotline</p>
-                            <p className="hover:underline hover:cursor-pointer">01781221242</p>
+                        <div className="flex space-x-10">
+                            <p className="px-3 py-1 bg-green-700 text-white rounded-md cursor-pointer">Login</p>
+                            <p className="px-3 py-1 bg-green-700 text-white rounded-md cursor-pointer">Register</p>
                         </div>
                     </div>
                     <div className="md:hidden">
@@ -75,11 +77,11 @@ const Navbar = () => {
                                 'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <MenuItem onClick={handleClose}>Volunteer</MenuItem>
-                                <MenuItem onClick={handleClose}>Get Aid</MenuItem>
-                                <MenuItem onClick={handleClose}>News and Stories</MenuItem>
-                                <MenuItem onClick={handleClose}>Donate</MenuItem>
-                                <MenuItem onClick={handleClose}>About Us</MenuItem>
+                                <MenuItem onClick={handleClose}>Home</MenuItem>
+                                <MenuItem onClick={handleClose}>Papers</MenuItem>
+                                <MenuItem onClick={handleClose}>News</MenuItem>
+                                <MenuItem onClick={handleClose}>Notices</MenuItem>
+                                <MenuItem onClick={handleClose}>About</MenuItem>
                             </Menu>
                         </div>
                     </div>
