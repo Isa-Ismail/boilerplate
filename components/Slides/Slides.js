@@ -21,27 +21,27 @@ const Slides = () =>{
 				<Slider className="w-[50%]" {...settings}>
 					
 					<div className="text-center px-10">
-						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+						<Image className="rounded-md" src="/logos and images/shop.png" height={650} width={650}/>
             <p>Earthquake</p>
 					</div>
 					<div className="text-center px-10">
-						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+						<Image className="rounded-md" src="/logos and images/shop.png" height={650} width={650}/>
             <p>Flood</p>
 					</div>
 					<div className="text-center px-10">
-						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+						<Image className="rounded-md" src="/logos and images/shop.png" height={650} width={650}/>
             <p>Storm</p>
 					</div>
           <div className="text-center px-10">
-						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+						<Image className="rounded-md" src="/logos and images/shop.png" height={650} width={650}/>
             <p>Storm</p>
 					</div>
           <div className="text-center px-10">
-						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+						<Image className="rounded-md" src="/logos and images/shop.png" height={650} width={650}/>
             <p>Storm</p>
 					</div>
           <div className="text-center px-10">
-						<Image className="rounded-md" src="/shop.png" height={650} width={650}/>
+						<Image className="rounded-md" src="/logos and images/shop.png" height={650} width={650}/>
             <p>Storm</p>
 					</div>
 				
