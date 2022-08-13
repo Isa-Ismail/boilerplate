@@ -16,11 +16,11 @@ const Banner = ({pass}) => {
     <div className="flex-col w-[100%] py-[18rem] h-screen">
 
         <div className="pb-6">
-          <h1 className="text-[#343A40] text-center text-[3rem]">Department of ICT, BUP</h1>
+          <h1 className="text-center text-[3rem] text-white">Department of ICT, BUP</h1>
         </div>
 
         <div>
-          <p className="text-center">
+          <p className="text-center text-white">
             Find the latest news, in-depth stories, Q&A and FAQs about our department here.
           </p>
         </div>
